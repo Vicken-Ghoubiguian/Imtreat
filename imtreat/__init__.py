@@ -1,1 +1,1 @@
-from generalSettings import cv2Version
+from .generalSettings import cv2Version
