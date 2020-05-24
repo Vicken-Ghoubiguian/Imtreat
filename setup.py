@@ -13,6 +13,6 @@ author='Wicken',
 author_email='eric.ghoubiguian@imerir.com',
 license='MIT',
 packages=['imtreat'],
-install_requires=['opencv-contrib-python'],
+install_requires=['opencv-contrib-python', 'tensorflow', 'keras'],
 zip_safe=False,
 python_requires='>=3.8.2')
