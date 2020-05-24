@@ -1,7 +1,7 @@
-##
-#
-#
-##
+#####################################################
+# The definedModes python module is the one which
+# apply wished modes to images and webcam frames
+#####################################################
 
 import cv2
 
