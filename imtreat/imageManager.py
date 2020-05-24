@@ -21,3 +21,8 @@ def finishItFunction():
 	cv2.waitKey(0)
 
 	cv2.destroyAllWindows()
+
+# Function to save image at a specific path, with a specific title and to a specific format
+def saveImageFunction(image_path, iamge_title, image_format):
+
+	cv2.imwrite(image_path + image_title + image_format)
