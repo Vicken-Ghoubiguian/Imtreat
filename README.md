@@ -6,4 +6,4 @@ The Python package is available here and ready to be used.
 
 So it will be used in any Python project.
 
-
+This smart agent will have the following functionalities:
