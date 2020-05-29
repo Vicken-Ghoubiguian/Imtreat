@@ -9,3 +9,8 @@ import cv2
 def hueSaturationLightnessModeFunction(wished_image):
 
 	return cv2.cvtColor(wished_image, cv2.COLOR_BGR2HSV)
+
+# Function to apply the edge detection mode
+def edgeDetectionModeFunction(wished_image):
+
+	return cv2.Canny(wished_image, 100, 300)
