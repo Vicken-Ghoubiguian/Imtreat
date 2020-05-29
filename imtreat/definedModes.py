@@ -15,6 +15,11 @@ def edgeDetectionModeFunction(wished_image):
 
 	return cv2.Canny(wished_image, 100, 300)
 
+# Function to apply the detailEnhance mode
+def detailEnhanceFunction(wished_image):
+
+	return cv2.detailEnhance(wished_image, sigma_s=10, sigma_r=0.15)
+
 # Function to apply the sketch mode
 def sketchModeFunction(wished_image, in_color):
 
