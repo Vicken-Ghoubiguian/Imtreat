@@ -20,6 +20,11 @@ def detailEnhanceFunction(wished_image):
 
 	return cv2.detailEnhance(wished_image, sigma_s=10, sigma_r=0.15)
 
+# Function to apply the inverted mode
+def invertedModeFunction(wished_image):
+
+	return cv2.bitwise_not(wished_image)
+
 # Function to apply the sketch mode
 def sketchModeFunction(wished_image, in_color):
 
