@@ -25,6 +25,11 @@ def invertedModeFunction(wished_image):
 
 	return cv2.bitwise_not(wished_image)
 
+# Function to apply oil painting Mode
+def oilPaintingModeFunction(wished_image):
+
+	return cv2.xphoto.oilPainting(wished_image, 20, 1)
+
 # Function to apply the sketch mode
 def sketchModeFunction(wished_image, in_color):
 
