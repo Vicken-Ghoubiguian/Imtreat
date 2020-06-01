@@ -5,6 +5,8 @@
 
 import cv2
 
+from pathlib import Path
+
 # Function to open a title-specified image with a specified mode
 def openImageFunction(wanted_image, wanted_mode):
 
@@ -25,4 +27,4 @@ def finishItFunction():
 # Function to save image at a specific path, with a specific title and to a specific format
 def saveImageFunction(image_path, image_title, image_format, wished_image):
 
-	cv2.imwrite(image_path + image_title + image_format, wished_image)
+	cv2.imwrite(str(Path.home()) + image_path + image_title + image_format, wished_image)
