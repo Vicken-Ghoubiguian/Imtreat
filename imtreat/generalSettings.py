@@ -6,12 +6,17 @@
 import cv2
 import numpy
 
-# Function to check OpenCV current version used by package
-def cv2Version():
+#
+class generalSettingsClass:
 
-	return cv2.__version__
+	# Function to check OpenCV current version used by package
+	@staticmethod
+	def cv2Version():
 
-# Function to check NumPy current version used by package
-def numpyVersion():
+		return cv2.__version__
 
-	return numpy.__version__
+	# Function to check NumPy current version used by package
+	@staticmethod
+	def numpyVersion():
+
+		return numpy.__version__
