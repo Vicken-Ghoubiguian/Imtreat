@@ -1,5 +1,5 @@
 import imtreat
 
-img = imtreat.openImageFunction("images/soleil.png", 1)
+img = imtreat.imageManagerClass.openImageFunction("images/soleil.png", 1)
 
-imtreat.saveImageFunction("/Téléchargements/", "image_1", ".png", img)
+imtreat.imageManagerClass.saveImageFunction("/Téléchargements/", "image_1", ".png", img)

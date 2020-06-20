@@ -18,7 +18,7 @@ class definedModesClass:
 	@staticmethod
 	def edgeDetectionModeFunction(wished_image):
 
-	return cv2.Canny(wished_image, 100, 300)
+		return cv2.Canny(wished_image, 100, 300)
 
 	# Function to apply the detailEnhance mode
 	@staticmethod
