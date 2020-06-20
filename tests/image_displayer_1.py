@@ -1,7 +1,7 @@
 import imtreat
 
-img = imtreat.openImageFunction("images/soleil.png", 0)
+img = imtreat.imageManagerClass.openImageFunction("images/soleil.png", 0)
 
-imtreat.displayImageFunction("experience de MMMMMOOOOIIIIII", img)
+imtreat.imageManagerClass.displayImageFunction("experience de MMMMMOOOOIIIIII", img)
 
-imtreat.finishItFunction()
+imtreat.imageManagerClass.finishItFunction()

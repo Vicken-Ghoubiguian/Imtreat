@@ -1,9 +1,9 @@
 import imtreat
 
-img = imtreat.openImageFunction("images/soleil.png", 1)
+img = imtreat.imageManagerClass.openImageFunction("images/soleil.png", 1)
 
 img = imtreat.definedModesClass.sketchModeFunction(img, False)
 
-imtreat.displayImageFunction("experience de MMMMMOOOOIIIIII", img)
+imtreat.imageManagerClass.displayImageFunction("experience de MMMMMOOOOIIIIII", img)
 
-imtreat.finishItFunction()
+imtreat.imageManagerClass.finishItFunction()

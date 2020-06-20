@@ -7,24 +7,31 @@ import cv2
 
 from pathlib import Path
 
-# Function to open a title-specified image with a specified mode
-def openImageFunction(wanted_image, wanted_mode):
+#
+class imageManagerClass:
 
-	return cv2.imread(wanted_image, wanted_mode)
+	# Function to open a title-specified image with a specified mode
+	@staticmethod
+	def openImageFunction(wanted_image, wanted_mode):
 
-# Function to display an image in a title-specified window
-def displayImageFunction(image_title, wanted_image):
+		return cv2.imread(wanted_image, wanted_mode)
 
-	cv2.imshow(image_title, wanted_image)
+	# Function to display an image in a title-specified window
+	@staticmethod
+	def displayImageFunction(image_title, wanted_image):
 
-# Function to finish loop process
-def finishItFunction():
+		cv2.imshow(image_title, wanted_image)
 
-	cv2.waitKey(0)
+	# Function to finish loop process
+	@staticmethod
+	def finishItFunction():
 
-	cv2.destroyAllWindows()
+		cv2.waitKey(0)
 
-# Function to save image at a specific path, with a specific title and to a specific format
-def saveImageFunction(image_path, image_title, image_format, wished_image):
+		cv2.destroyAllWindows()
 
-	cv2.imwrite(str(Path.home()) + image_path + image_title + image_format, wished_image)
+	# Function to save image at a specific path, with a specific title and to a specific format
+	@staticmethod
+	def saveImageFunction(image_path, image_title, image_format, wished_image):
+
+		cv2.imwrite(str(Path.home()) + image_path + image_title + image_format, wished_image)
