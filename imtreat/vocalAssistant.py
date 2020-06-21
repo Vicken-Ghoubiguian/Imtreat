@@ -5,7 +5,7 @@
 
 import pyttsx3
 
-#
+# Specified class to define the vocal assistance
 class vocalAssistantClass:
 
 	# Initialize a vocalAssistantClass instance

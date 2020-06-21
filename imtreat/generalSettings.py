@@ -5,8 +5,9 @@
 
 import cv2
 import numpy
+import pyttsx3
 
-#
+# Specified class to consult settings
 class generalSettingsClass:
 
 	# Function to check OpenCV current version used by package

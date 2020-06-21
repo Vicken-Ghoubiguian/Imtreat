@@ -5,7 +5,7 @@
 
 import cv2
 
-#
+# Specified class to apply defined modes
 class definedModesClass:
 
 	# Function to apply the Hue Saturation Lightness (HSV) mode

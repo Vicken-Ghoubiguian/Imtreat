@@ -7,7 +7,7 @@ import cv2
 
 from pathlib import Path
 
-#
+# Specified class to define image manager
 class imageManagerClass:
 
 	# Function to open a title-specified image with a specified mode
