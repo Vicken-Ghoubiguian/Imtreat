@@ -1,6 +1,6 @@
 import imtreat
 
-img = imtreat.imageManagerClass.openImageFunction("images/soleil.png", 0)
+img = imtreat.imageManagerClass.openImageFunction("../images/soleil.png", 0)
 
 img = imtreat.definedModesClass.hueSaturationLightnessModeFunction(img)
 
