@@ -62,6 +62,18 @@ class definedModesClass:
 
 		return cv2.applyColorMap(wished_image, cv2.COLORMAP_RAINBOW)
 
+	# Function to apply hot Mode
+	@staticmethod
+	def hotModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_HOT)
+
+	# Function to apply pink Mode
+	@staticmethod
+	def pinkModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_PINK)
+
 	# Function to apply the sketch mode
 	@staticmethod
 	def sketchModeFunction(wished_image, in_color):
