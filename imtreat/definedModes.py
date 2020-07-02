@@ -44,6 +44,12 @@ class definedModesClass:
 
 		return cv2.applyColorMap(wished_image, cv2.COLORMAP_SUMMER)
 
+	# Function to apply ocean Mode
+	@staticmethod
+	def oceanModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_OCEAN)
+
 	# Function to apply winter Mode
 	@staticmethod
 	def winterModeFunction(wished_image):
