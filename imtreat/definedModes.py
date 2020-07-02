@@ -62,6 +62,24 @@ class definedModesClass:
 
 		return cv2.applyColorMap(wished_image, cv2.COLORMAP_RAINBOW)
 
+	# Function to apply jet Mode
+	@staticmethod
+	def jetModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_JET)
+
+	# Function to apply hsv Mode
+	@staticmethod
+	def hsvModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_HSV)
+
+	# Function to apply spring Mode
+	@staticmethod
+	def springModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_SPRING)
+
 	# Function to apply hot Mode
 	@staticmethod
 	def hotModeFunction(wished_image):
