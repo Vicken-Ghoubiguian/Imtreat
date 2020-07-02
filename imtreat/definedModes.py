@@ -38,6 +38,30 @@ class definedModesClass:
 
 		return cv2.xphoto.oilPainting(wished_image, 10, 1)
 
+	# Function to apply winter Mode
+	@staticmethod
+	def winterModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_WINTER)
+
+	# Function to apply bone Mode
+	@staticmethod
+	def boneModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_BONE)
+
+	# Function to apply cool Mode
+	@staticmethod
+	def coolModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_COOL)
+
+	# Function to apply rainbow Mode
+	@staticmethod
+	def rainbowModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_RAINBOW)
+
 	# Function to apply the sketch mode
 	@staticmethod
 	def sketchModeFunction(wished_image, in_color):
