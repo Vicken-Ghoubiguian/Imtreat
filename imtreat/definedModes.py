@@ -38,6 +38,12 @@ class definedModesClass:
 
 		return cv2.xphoto.oilPainting(wished_image, 10, 1)
 
+	# Function to apply summer Mode
+	@staticmethod
+	def summerModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_SUMMER)
+
 	# Function to apply winter Mode
 	@staticmethod
 	def winterModeFunction(wished_image):
@@ -73,6 +79,12 @@ class definedModesClass:
 	def hsvModeFunction(wished_image):
 
 		return cv2.applyColorMap(wished_image, cv2.COLORMAP_HSV)
+
+	# Function to apply autumn Mode
+	@staticmethod
+	def autumnModeFunction(wished_image):
+
+		return cv2.applyColorMap(wished_image, cv2.COLORMAP_AUTUMN)
 
 	# Function to apply spring Mode
 	@staticmethod
