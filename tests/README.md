@@ -1,10 +1,10 @@
-## Tests
+# Tests
 
 This is the **tests** directory to test all the python package's functionalities and to give you samples to show you how use this python package.
 
 This directory contains 4 others directories and 1 python file we will describe bellow.
 
-# Contents
+## Contents
 
 * [image_displayer](https://gitlab.imerir.com/eric.ghoubiguian/imtreat/tree/master/tests/image_displayer) directory,
 
