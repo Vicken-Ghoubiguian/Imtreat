@@ -8,6 +8,22 @@ import cv2
 # Specified class to apply defined modes
 class definedModesClass:
 
+	# Function to apply the Black and White mode
+	@staticmethod
+	def blackAndWhiteModeFunction(wished_image):
+
+		grayed_frame = cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
+
+		ret, black_and_white_image = cv2.threshold(grayed_frame, 127, 255, cv2.THRESH_BINARY)
+
+		return black_and_white_image
+
+	# Function to apply the Gray and White mode
+	@staticmethod
+	def gayAndWhiteModeFunction(wished_image):
+
+		return cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
+
 	# Function to apply the Hue Saturation Lightness (HSV) mode
 	@staticmethod
 	def hueSaturationLightnessModeFunction(wished_image):
