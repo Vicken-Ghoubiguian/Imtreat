@@ -20,7 +20,7 @@ class definedModesClass:
 
 	# Function to apply the Gray and White mode
 	@staticmethod
-	def gayAndWhiteModeFunction(wished_image):
+	def grayAndWhiteModeFunction(wished_image):
 
 		return cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
 
