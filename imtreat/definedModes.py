@@ -30,7 +30,7 @@ class definedModesClass:
 
 		for i in range(num_repetitions):
 
-			img_small = cv2.bilateralFilter(img_small, ksize, sigma_color, sigma_space)
+			img_small = cv2.bilateralFilter(img_small, 5, sigma_color, sigma_space)
 
 		img_output = cv2.resize(img_small, None, fx = ds_factor, fy = ds_factor, interpolation = cv2.INTER_LINEAR)
 
