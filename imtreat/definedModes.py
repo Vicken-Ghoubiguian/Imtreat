@@ -11,9 +11,9 @@ class definedModesClass:
 
 	# Function to apply cartoon mode (with or without sketch_mode)
 	@staticmethod
-	def cartoonModeFunction(img):
+	def cartoonModeFunction(wished_image):
 
-		return cv2.stylization(img, sigma_s=150, sigma_r=0.25)
+		return cv2.stylization(wished_image, sigma_s=150, sigma_r=0.25)
 
 	# Function to apply the Black and White mode
 	@staticmethod
