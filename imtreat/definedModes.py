@@ -11,35 +11,9 @@ class definedModesClass:
 
 	# Function to apply cartoon mode (with or without sketch_mode)
 	@staticmethod
-	def cartoonModeFunction(img, sketch_mode = False):
+	def cartoonModeFunction(img):
 
-		num_repetitions, sigma_color, sigma_space, ds_factor = 10, 5, 7, 4
-
-		img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-		img_gray = cv2.medianBlur(img_gray, 7)
-
-		edges = cv2.Laplacian(img_gray, cv2.CV_8U, 5)
-
-		ret, mask = cv2.threshold(edges, 100, 255, cv2.THRESH_BINARY_INV)
-
-		if sketch_mode:
-
-			return cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
-
-		img_small = cv2.resize(img, None, fx = 1.0/ds_factor, fy = 1.0/ds_factor, interpolation = cv2.INTER_AREA)
-
-		for i in range(num_repetitions):
-
-			img_small = cv2.bilateralFilter(img_small, 5, sigma_color, sigma_space)
-
-		img_output = cv2.resize(img_small, None, fx = ds_factor, fy = ds_factor, interpolation = cv2.INTER_LINEAR)
-
-		dst = np.zeros(img_gray.shape)
-
-		dst = cv2.bitwise_and(img_output, img_output, mask = mask)
-
-		return dst
+		return cv2.stylization(img, sigma_s=150, sigma_r=0.25)
 
 	# Function to apply the Black and White mode
 	@staticmethod
