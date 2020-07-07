@@ -133,9 +133,9 @@ class definedModesClass:
 
 		return cv2.applyColorMap(wished_image, cv2.COLORMAP_PINK)
 
-	# Function to apply the sketch mode
+	# Function to apply the pencil sketch mode
 	@staticmethod
-	def sketchModeFunction(wished_image, in_color):
+	def pencilSketchModeFunction(wished_image, in_color):
 
 		gray_result, dst_result = cv2.pencilSketch(wished_image, sigma_s=60, sigma_r=0.07, shade_factor=0.05)
 
