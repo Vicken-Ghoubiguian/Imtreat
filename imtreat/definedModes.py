@@ -4,6 +4,7 @@
 #####################################################
 
 import cv2
+import numpy as np
 
 # Specified class to apply defined modes
 class definedModesClass:
