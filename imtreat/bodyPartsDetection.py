@@ -16,7 +16,7 @@ class bodyPartsDetectionClass:
 
         wished_image_in_gray = cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
 
-        eyes = eyes_cascade.detectMultiScale(image, 1.1, 4)
+        eyes = eyes_cascade.detectMultiScale(wished_image, 1.1, 4)
 
         for (x,y,w,h) in eyes:
 
