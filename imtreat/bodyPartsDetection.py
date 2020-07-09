@@ -10,7 +10,7 @@ class bodyPartsDetectionClass:
 
     # Function to apply face detection
     @staticmethod
-    def faceDetectionFunction(wished_image):
+    def faceDetectionFunction(wished_image, wished_color = (255, 0, 0)):
 
         face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
@@ -20,6 +20,6 @@ class bodyPartsDetectionClass:
 
         for (x, y, w, h) in faces:
 
-            cv2.rectangle(wished_image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.rectangle(wished_image, (x, y), (x+w, y+h), wished_color, 2)
 
         return wished_image
