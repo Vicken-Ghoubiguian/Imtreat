@@ -12,7 +12,7 @@ class bodyPartsDetectionClass:
     @staticmethod
     def eyesDetectionFunction(wished_image, wished_color = (255, 0, 0)):
 
-        eyes_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+        eyes_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tree_eyeglasses.xml')
 
         wished_image_in_gray = cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
 
