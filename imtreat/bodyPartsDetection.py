@@ -12,7 +12,7 @@ class bodyPartsDetectionClass:
     @staticmethod
     def noseDetectionFunction(wished_image, wished_color = (255, 0, 0)):
 
-        nose_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_mcs_nose.xml')
+        nose_cascade = cv2.CascadeClassifier('additionalHaarcascade/haarcascade_mcs_nose.xml')
 
         wished_image_in_gray = cv2.cvtColor(wished_image, cv2.COLOR_BGR2GRAY)
 
