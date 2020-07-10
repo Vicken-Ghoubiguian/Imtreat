@@ -10,7 +10,7 @@ class bodyPartsDetectionClass:
     
     # Function to apply beta eyes detection
     @staticmethod
-    def betayesDetectionFunction(wished_image, wished_color = (255, 0, 0)):
+    def betaEyesDetectionFunction(wished_image, wished_color = (255, 0, 0)):
 
         eyes_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
