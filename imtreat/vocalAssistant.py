@@ -36,6 +36,21 @@ class vocalAssistantClass:
 
 			print("Error: invalid value for 'volumeValue'")
 
+	# Function to get all available voices
+	def getAllVoices(self):
+
+		voices = self.__engine.getProperty('voices')
+
+		for voice in voices:
+
+			print("Voice: %s" % voice.name)
+			print(" - ID: %s" % voice.id)
+			print(" - Languages: %s" % voice.languages)
+			print(" - Gender: %s" % voice.gender)
+			print(" - Age: %s" % voice.age)
+			print("\n")
+
+
 	# Function to return the current value of rate
 	def getRate(self):
 
