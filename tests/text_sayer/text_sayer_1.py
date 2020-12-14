@@ -1,7 +1,16 @@
+import sys
 import imtreat
 
 vocalAssistant = imtreat.vocalAssistant.vocalAssistantClass()
 
-vocalAssistant.setVolume(1.0)
+sayText = ""
 
-vocalAssistant.sayText("Hello world")
+if len(sys.argv) == 1:
+
+	sayText = "Hello world"
+
+else:
+
+	sayText = sys.argv[1]
+
+vocalAssistant.sayText(sayText)
