@@ -13,4 +13,6 @@ else:
 
 	sayText = sys.argv[1]
 
+vocalAssistant.setVolume(1.0)
+vocalAssistant.setRate(50)
 vocalAssistant.sayText(sayText)
