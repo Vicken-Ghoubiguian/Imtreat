@@ -69,3 +69,8 @@ class vocalAssistantClass:
 	def setRate(self, rateValue):
 
 		self.__engine.setProperty('rate', rateValue)
+
+	# Function to record a 'wishedText' text inside a 'fileNameWithPath' MP3 file
+	def textToSpeechRecorder(wishedText, fileNameWithPath):
+
+		self.__engine.save_to_file(wishedText, fileNameWithPath + '.mp3')
