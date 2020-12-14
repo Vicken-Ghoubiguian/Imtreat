@@ -15,4 +15,4 @@ license='MIT',
 packages=['imtreat'],
 install_requires=['opencv-contrib-python', 'pyttsx3'],
 zip_safe=False,
-python_requires='>=3.8.2')
+python_requires='>=3.7.2')
