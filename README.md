@@ -8,6 +8,12 @@ The Python package is available on PyPi here and ready to be used.
 
 1. [Introduction](#introduction)
 2. [Presentation](#presentation)
+3. [Git repos's structure](#repos_s_structure)
+4. [How was this project developed ?](#how_was_this_project_developed)
+5. [](#)
+6. [A few examples](#a_few_examples)
+7. [Useful links](#useful_links)
+8. [Conclusion](#conclusion)
 
 <a name="introduction"></a>
 ## Introduction
