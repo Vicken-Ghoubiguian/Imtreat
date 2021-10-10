@@ -6,6 +6,8 @@ The Python package is available on PyPi here and ready to be used.
 
 ## Contents
 
+1. [Introduction](#introduction)
+2. [Presentation](#presentation)
 
 <a name="introduction"></a>
 ## Introduction
