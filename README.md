@@ -1,4 +1,4 @@
-# Presentation
+# Imtreat
 
 This is a Python package to encapsulate all connected camera's features and to deploy easily it on the ready device.
 
@@ -12,10 +12,12 @@ The Python package is available on PyPi here and ready to be used.
 4. [How was this project developed ?](#how_was_this_project_developed)
 5. [How does this project work ?](#how_does_this_project_work)
 6. [How to install it ?](#how_to_install_it)
-6. [How to use it ?](#how_to_use_it)
-6. [A few examples](#a_few_examples)
-7. [Useful links](#useful_links)
-8. [Conclusion](#conclusion)
+    * [From PyPi](#from_pypi)
+    * [From GitHub](#from_github)
+7. [How to use it ?](#how_to_use_it)
+8. [A few examples](#a_few_examples)
+9. [Useful links](#useful_links)
+10. [Conclusion](#conclusion)
 
 <a name="introduction"></a>
 ## Introduction
@@ -34,6 +36,12 @@ The Python package is available on PyPi here and ready to be used.
 
 <a name="how_to_install_it"></a>
 ## How to install it ?
+
+<a name="from_pypi"></a>
+### From PyPi
+
+<a name="from_github"></a>
+### From GitHub
 
 <a name="how_to_use_it"></a>
 ## How to use it ?
